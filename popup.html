@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Vulnerability Scanner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Web Vulnerability Scanner</h2>
+  <div id="test-options">
+    <label><input type="checkbox" id="sqli"> SQL Injection</label>
+    <label><input type="checkbox" id="xss"> XSS</label>
+    <label><input type="checkbox" id="csrf"> CSRF</label>
+    <label><input type="checkbox" id="dirTraversal"> Directory Traversal</label>
+  </div>
+  <button id="runTests">Run Selected Tests</button>
+  <div id="results">
+    <h3>Results</h3>
+    <ul id="resultsList"></ul>
+  </div>
+  <button id="saveReport">Save Report</button>
+  <script src="popup.js"></script>
+</body>
+</html>

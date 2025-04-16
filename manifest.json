@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Web Vulnerability Scanner",
+  "version": "1.0",
+  "description": "Scan for common web vulnerabilities like SQLi, XSS, CSRF, and Directory Traversal.",
+  "permissions": ["scripting", "tabs", "activeTab", "storage", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  }
+}
